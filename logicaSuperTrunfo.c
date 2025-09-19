@@ -17,6 +17,7 @@ int main() {
     int pontos_turisticos1,pontos_turisticos2;
     float densidade_populacional1,densidade_populacional2;
     float PIB_per_capita1, PIB_per_capita2;
+    char cidade_vencedora1, cidadade_vencedora2;
 
     
     // Cadastro das Cartas:
@@ -72,6 +73,34 @@ int main() {
     densidade_populacional2 = (float) populacao2 / area2;
     PIB_per_capita2 = pib2 / (float) populacao2;
 
+    // Calculando cidade vencedora
+    cidade_vencedora1 = (float)populacao1 + area1 + pib1 + (float)pontos_turisticos1 + PIB_per_capita1 + (1.0f / densidade_populacional1);
+    cidadade_vencedora2 = (float)populacao2 + area2 + pib2 + (float)pontos_turisticos2 + PIB_per_capita2+ (1.0f / densidade_populacional2);
+     
+     printf("\nCarta 1:\n");
+    printf("Estado: %s\n", estado1);
+    printf("Código: %s\n", codigo1);
+    printf("Nome da Cidade: %s\n", nome_cidade1);
+    printf("População: %lu\n", populacao1);
+    printf("Área: %.2f km²\n", area1);
+    printf("PIB: %.2f bilhões de reais\n", pib1);
+    printf("Número de Pontos Turísticos: %d\n", pontos_turisticos1);
+    printf("Densidade Populacional: %.2f\n", densidade_populacional1);
+    printf("PIB per Capita: %.6f\n", PIB_per_capita1);
+
+    
+    printf("\nCarta 2:\n");
+    printf("Estado: %s\n", estado2);
+    printf("Código: %s\n", codigo2);
+    printf("Nome da Cidade: %s\n", nome_cidade2);
+    printf("População: %lu\n", populacao2);
+    printf("Área: %.2f km²\n", area2);
+    printf("PIB: %.2f bilhões de reais\n", pib2);
+    printf("Número de Pontos Turísticos: %d\n", pontos_turisticos2);
+    printf("Densidade Populacional: %.2f\n", densidade_populacional2);
+    printf("PIB per Capita: %.6f\n", PIB_per_capita2);
+
+
     // Comparação de Cartas:
     // Desenvolva a lógica de comparação entre duas cartas.
     // Utilize estruturas de decisão como if, if-else para comparar atributos como população, área, PIB, etc.
@@ -111,6 +140,13 @@ int main() {
          printf("Cidade 1 tem o maior PIB per Capita.\n");
       } else {
          printf("Cidade 2 tem o maior PIB per Capita.\n");
+     }
+     if (cidade_vencedora1 > cidadade_vencedora2)
+     {
+      printf("Carta 1 venceu.\n");
+     }
+     else{
+        printf ("Carta 2 venceu.\n");
      }
 
     // Exibição dos Resultados:
