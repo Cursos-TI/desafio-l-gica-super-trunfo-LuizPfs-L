@@ -35,7 +35,7 @@ int main() {
     scanf("%s", estado1);
     printf("Código da carta:\n");
     scanf("%s", codigo1);
-    printf("Nome da cidade (digite sem espaços, use _ ou - para separar as palavras):\n");
+    printf("Nome da cidade(digite sem espaços, use _ ou - para separar as palavras):\n");
     printf("Exemplo: Rio_de_Janeiro ou Belo-Horizonte\n");
     scanf("%s", nome_cidade1);
     printf("População:\n");
@@ -55,7 +55,7 @@ int main() {
     scanf("%s", estado2);
     printf("Código da carta:\n");
     scanf("%s", codigo2);
-    printf("Nome da cidade (digite sem espaços, use _ ou - para separar as palavras):\n");
+    printf("Nome da cidade(digite sem espaços, use _ ou - para separar as palavras):\n");
     printf("Exemplo: Rio_de_Janeiro ou Belo-Horizonte\n");
     scanf("%s", nome_cidade2);
     printf("População:\n");
