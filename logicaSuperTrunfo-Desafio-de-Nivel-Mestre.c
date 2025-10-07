@@ -53,7 +53,7 @@ int main() {
     printf("Opção: ");
     scanf("%d", &op2);
 
-    // Validação sem for/while
+    
     if (op2 < 1 || op2 > 6 || op2 == op1) {
         printf("Opção inválida! O programa será encerrado.\n");
         return 0;
@@ -71,20 +71,56 @@ int main() {
     char atributo_nome1[40], atributo_nome2[40];
     float val1_1, val2_1, val1_2, val2_2;
     switch(op1) {
-        case 1: sprintf(atributo_nome1, "População"); val1_1 = populacao1; val2_1 = populacao2; break;
-        case 2: sprintf(atributo_nome1, "Área"); val1_1 = area1; val2_1 = area2; break;
-        case 3: sprintf(atributo_nome1, "PIB"); val1_1 = pib1; val2_1 = pib2; break;
-        case 4: sprintf(atributo_nome1, "Pontos turísticos"); val1_1 = pontos_turisticos1; val2_1 = pontos_turisticos2; break;
-        case 5: sprintf(atributo_nome1, "Densidade populacional"); val1_1 = densidade1; val2_1 = densidade2; break;
-        case 6: sprintf(atributo_nome1, "PIB per capita"); val1_1 = pibpc1; val2_1 = pibpc2; break;
+        case 1: 
+        printf(atributo_nome1, "População"); 
+        val1_1 = populacao1; val2_1 = populacao2; 
+        break;
+        case 2: 
+        printf(atributo_nome1, "Área"); 
+        val1_1 = area1; val2_1 = area2; 
+        break;
+        case 3: 
+        printf(atributo_nome1, "PIB"); 
+        val1_1 = pib1; val2_1 = pib2; 
+        break;
+        case 4: 
+        printf(atributo_nome1, "Pontos turísticos"); 
+        val1_1 = pontos_turisticos1; val2_1 = pontos_turisticos2; 
+        break;
+        case 5: 
+        printf(atributo_nome1, "Densidade populacional"); 
+        val1_1 = densidade1; val2_1 = densidade2; 
+        break;
+        case 6: 
+        printf(atributo_nome1, "PIB per capita"); 
+        val1_1 = pibpc1; val2_1 = pibpc2;
+         break;
     }
     switch(op2) {
-        case 1: sprintf(atributo_nome2, "População"); val1_2 = populacao1; val2_2 = populacao2; break;
-        case 2: sprintf(atributo_nome2, "Área"); val1_2 = area1; val2_2 = area2; break;
-        case 3: sprintf(atributo_nome2, "PIB"); val1_2 = pib1; val2_2 = pib2; break;
-        case 4: sprintf(atributo_nome2, "Pontos turísticos"); val1_2 = pontos_turisticos1; val2_2 = pontos_turisticos2; break;
-        case 5: sprintf(atributo_nome2, "Densidade populacional"); val1_2 = densidade1; val2_2 = densidade2; break;
-        case 6: sprintf(atributo_nome2, "PIB per capita"); val1_2 = pibpc1; val2_2 = pibpc2; break;
+        case 1: 
+        printf(atributo_nome2, "População"); 
+        val1_2 = populacao1; val2_2 = populacao2; 
+        break;
+        case 2: 
+        printf(atributo_nome2, "Área");
+         val1_2 = area1; val2_2 = area2;
+          break;
+        case 3: 
+        printf(atributo_nome2, "PIB"); 
+        val1_2 = pib1; val2_2 = pib2; 
+        break;
+        case 4: 
+        printf(atributo_nome2, "Pontos turísticos");
+         val1_2 = pontos_turisticos1; val2_2 = pontos_turisticos2; 
+         break;
+        case 5: 
+        printf(atributo_nome2, "Densidade populacional"); 
+        val1_2 = densidade1; val2_2 = densidade2; 
+        break;
+        case 6: 
+        printf(atributo_nome2, "PIB per capita"); 
+        val1_2 = pibpc1; val2_2 = pibpc2; 
+        break;
     }
 
     // Mostra os valores dos atributos escolhidos
